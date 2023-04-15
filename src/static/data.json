@@ -22,15 +22,15 @@
   "jobs": [
     {
       "title": "Software Development",
-      "src": "./public/images/soft.svg"
+      "src": "/src/images/soft.svg"
     },
     {
       "title": "Web Development",
-      "src": "./public/images/web.svg"
+      "src": "/src/images/web.svg"
     },
     {
       "title": "Web Design",
-      "src": "./public/images/UI.svg"
+      "src": "/src/images/UI.svg"
     }
   ]
 }
