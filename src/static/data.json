@@ -1,0 +1,36 @@
+{
+  "abouts": [
+    {
+      "title": "Full Name",
+      "email": "Abduvohid Vohidov",
+      "text": "Software Development"
+    },
+    {
+      "title": "Email Address",
+      "email": "@vohid4970@gmail.com",
+      "text": "Software Development"
+    },
+    {
+      "title": "Telegram",
+      "email": "@vohid1255"
+    },
+    {
+      "title": "Phone",
+      "email": "+998998577232"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Software Development",
+      "src": "./public/images/soft.svg"
+    },
+    {
+      "title": "Web Development",
+      "src": "./public/images/web.svg"
+    },
+    {
+      "title": "Web Design",
+      "src": "./public/images/UI.svg"
+    }
+  ]
+}

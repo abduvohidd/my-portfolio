@@ -1,0 +1,26 @@
+---
+import { jobs } from "../static/data.json";
+---
+
+<div class="bg-[#171717]">
+
+  <div class="container">
+  
+      <div class="flex flex-col items-center justify-center ">
+        <h1 class="not-italic font-bold	text-[#ffffff] md:text-5xl text-4xl sm:mt-20 mt-5">What i do</h1>
+
+        <div class="flex xl:flex-row flex-col items-center justify-around w-full mt-20 mb-16 xl:flex-nowrap flex-wrap ">
+            {
+              jobs.map((item) =>
+                <div v-for="item in abouts" class="flex flex-col items-start justify-around sm:p-10 p-3 md:mt-0 md:mx-0 mt-8  mb-10 mx-5 bg-[#212121] sm:w-[350px] h-[240px] w-[210px]  hover:border-x-[#000] hover:border-t-[#000] hover:border-2  hover:border-b-4 hover:border-[#27AE60] hover:cursor-pointer">
+                    <img src={item.src} alt="">
+                    <h1 class="text-[#ffffff] font-medium not-italic sm:text-4xl text-3xl w-[70%] ">{item.title}</h1>
+                </div>
+              )
+            }
+        </div>
+        
+      </div>
+
+  </div>
+</div>

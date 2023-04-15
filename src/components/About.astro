@@ -1,0 +1,28 @@
+---
+import { abouts } from "../static/data.json";
+---
+
+<div id="about" class="bg-[#171717] ">
+
+  <div class="container">
+  
+      <div class="flex flex-col items-center justify-center ">
+        <h1 class="not-italic font-bold	text-[#ffffff] md:text-5xl text-4xl sm:mt-0 mt-5">About</h1>
+
+        <p class="font-normal	not-italic text-center md:text-lg text-base text-[#ffffff] md:w-[745px] sm:w-[500px] mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+
+        <div class="flex justify-around w-full mt-20 mb-16 md:flex-nowrap flex-wrap">
+            {
+              abouts.map((item) =>
+                <div v-for="item in abouts" class="flex flex-col items-center justify-center md:mt-0 md:mx-0 	mt-8 mx-5">
+                    <div class="flex items-center justify-center w-[3rem] h-[3rem] p-1 rounded-full bg-[#212121]"><div class="w-[1rem] h-[1rem] bg-[#27AE60] rounded-full"></div></div>
+                    <h1 class="text-[#ffffff] font-bold not-italic text-lg	mt-3">{item.title}</h1>
+                    <p class="text-[#ffffff] font-normal not-italic text-lg	mt-3">{item.email}</p>
+                </div>
+              )
+            }
+        </div>
+      </div>
+
+  </div>
+</div>

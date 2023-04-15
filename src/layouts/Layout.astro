@@ -1,0 +1,22 @@
+---
+import "../styles/index.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<!DOCTYPE html>
+<html  class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Abduvohid Vohidov</title>
+    <meta name="title" content="Abduvohid Vohidov" />
+  </head>
+  <body class="font-dm-sans overflow-x-hidden">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
